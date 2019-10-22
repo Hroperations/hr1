@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<style type="text/css">
+	.form {
+		margin: 0 auto;
+		width: 310px;
+	}
+	.form label{
+		display: inline-block;
+		text-align: right;
+		float: left;
+	}
+	.form input{
+		display: inline-block;
+		text-align: left;
+		float: right;
+	}
+</style>
+
+
+</head>
+<body>
+<h3 align="center">Enter Job Details</h3>
+<form name="p" method="post" action="admin?action=viewJob" >
+<div class="form">
+<label>JobId:   </label>
+<input type="number" name="jobId" id="jobId"></br></br>
+<label>JobTitle:    </label>
+<input type="text" name="jobTitle" id="jobTitle"></br></br>
+<label>EligibilityCriteria:</label>
+<input type="text" name="eligibilityCriteria" id="eligibilityCriteria"></br></br>
+<label>OpportunityId:</label>
+<input type="number" name="opportunityId" id="opportunityId"></br></br>
+<input type="submit" value="Post" >
+</div>
+</form>
+</body>
+</html>
